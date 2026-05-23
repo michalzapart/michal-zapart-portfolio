@@ -27,6 +27,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/animate.css">
   <style>
+    :root {
+      --squad-color: #ffc40a;
+      --warden-color: #f70d10;
+    }
+
     .mz-project-tag {
       padding: 0.25rem 0.5rem;
       background-color: #1C1C1E;
@@ -36,8 +41,21 @@
       font-size: 0.875rem;
       color: #F5F5F7;
       font-family: 'Alata', sans-serif;
+      opacity: 0.9;
+    }
+    .mz-project-tag:hover {
+      opacity: 1;
+    }
+    .mz-project-tag--warden {
+      background-color: var(--warden-color);
+      color: #181f29;
+    }
+    .mz-project-tag--squad {
+      background-color: var(--squad-color);
+      color: #181f29;
     }
     .skill-tag {
+      opacity: 0.9;
       padding: 0.5rem 1rem;
       background-color: #1C1C1E;
       display: flex;
@@ -46,6 +64,9 @@
       font-size: 1rem;
       color: #F5F5F7;
       font-family: 'Alata', sans-serif;
+    }
+    .skill-tag:hover {
+      opacity: 1;
     }
   </style>
 </head>
@@ -62,7 +83,7 @@
   </div>
 
 
-  <div class="self-stretch p-16 bg-teal-200 flex flex-col justify-start items-start gap-8">
+  <div class="self-stretch p-16 bg-New-Teal-Intensive flex flex-col justify-start items-start gap-8">
     <div class="justify-start text-New-Black text-4xl font-normal font-['Alata']">About me</div>
     <div class="self-stretch justify-start text-New-Black text-2xl font-normal font-['Alata']">As a UX Design Lead & AI Strategist with 14+ years of experience, I focus on making complex technology feel human. I specialize in leading teams, conducting deep user research, and building Design Systems that actually work for people.</div>
     <div class="self-stretch justify-start text-New-Black text-2xl font-normal font-['Alata']">My "superpower" is bridging the gap between design and engineering — I speak both languages fluently.</div>
@@ -77,7 +98,7 @@
 
   <div class="self-stretch grid grid-cols-2 gap-4">
 
-    <div class="p-8 bg-gray-100 bg-no-repeat bg-right bg-[size:60%] bg-[url('assets/img/umowmyto.png')]">
+    <div class="p-8 bg-gray-100 bg-no-repeat bg-right bg-[size:60%] bg-[url('assets/img/umowmyto.png')] transition-all duration-300 hover:bg-[size:62%] cursor-pointer">
       <div class="flex flex-col justify-start items-start gap-4" style="width: 40%">
         <img src="assets/img/umowmyto-logo.png" style="height: 32px">
         <div class="text-New-Black text-2xl font-normal font-['Alata']">Umówmy to</div>
@@ -94,7 +115,7 @@
       </div>
     </div>
 
-    <div class="p-8 bg-gray-100 bg-no-repeat bg-[position:430%_center] bg-[size:90%] bg-[url('assets/img/realvalue.png')]">
+    <div class="p-8 bg-gray-100 bg-no-repeat bg-[position:430%_center] bg-[size:90%] bg-[url('assets/img/realvalue.png')] transition-all duration-300 hover:bg-[size:90.5%] cursor-pointer">
       <div class="flex flex-col justify-start items-start gap-4" style="width: 50%">
         <div class="text-New-Black text-2xl font-normal font-['Alata']">RealValue</div>
         <div class="w-full text-New-Black text-base font-normal font-['Inter']">RealValue is a web portal for people who are looking for real estate to buy, rent or invest.</div>
@@ -110,26 +131,26 @@
       </div>
     </div>
 
-    <div class="p-8 bg-gray-100 bg-no-repeat bg-[position:500%_center] bg-[size:90%] bg-[url('assets/img/squad.png')]" style="background-color: #141820">
+    <div class="p-8 bg-gray-100 bg-no-repeat bg-[position:500%_center] bg-[size:90%] bg-[url('assets/img/squad.png')] transition-all duration-300 hover:bg-[size:90.5%] cursor-pointer" style="background-color: #141820">
       <div class="flex flex-col justify-start items-start gap-4" style="width: 50%">
         <img src="assets/img/squad-logo.png" style="height: 32px">
-        <div class="text-New-White text-2xl font-normal font-['Alata']">Squad UI remake</div>
-        <div class="w-full text-New-White text-base font-normal font-['Inter']">Squad is a military simulation first-person shooter (FPS) game that features fictional conflicts. The objective was to create a modern UI for the game that is aligned with the existing look and feel.</div>
+        <div class="text-New-White text-2xl font-normal font-['Alata']" style="color: var(--squad-color)">Squad UI remake</div>
+        <div class="w-full text-New-White text-base font-normal font-['Inter']" style="color: var(--squad-color)">Squad is a military simulation first-person shooter (FPS) game that features fictional conflicts. The objective was to create a modern UI for the game that is aligned with the existing look and feel.</div>
         <div class="inline-flex justify-start items-center gap-1 flex-wrap content-center">
-          <div class="mz-project-tag">UX Workshops</div>
-          <div class="mz-project-tag">Stakeholders Facilitating</div>
-          <div class="mz-project-tag">UI Design</div>
-          <div class="mz-project-tag">UX Design</div>
-          <div class="mz-project-tag">Design System</div>
-          <div class="mz-project-tag">Adobe XD</div>
-          <div class="mz-project-tag">Branding</div>
+          <div class="mz-project-tag mz-project-tag--squad">UX Workshops</div>
+          <div class="mz-project-tag mz-project-tag--squad">Stakeholders Facilitating</div>
+          <div class="mz-project-tag mz-project-tag--squad">UI Design</div>
+          <div class="mz-project-tag mz-project-tag--squad">UX Design</div>
+          <div class="mz-project-tag mz-project-tag--squad">Design System</div>
+          <div class="mz-project-tag mz-project-tag--squad">Adobe XD</div>
+          <div class="mz-project-tag mz-project-tag--squad">Branding</div>
         </div>
-        <div class="text-New-Black text-base font-normal font-['Inter'] underline">READ MORE</div>
+        <div class="text-New-Black text-base font-normal font-['Inter'] underline" style="color: var(--squad-color);">READ MORE</div>
       </div>
     </div>
 
 
-    <div class="p-8 bg-gray-100 bg-no-repeat bg-[position:130%_center] bg-[size:60%] bg-[url('assets/img/ehotel.png')]">
+    <div class="p-8 bg-gray-100 bg-no-repeat bg-[position:130%_center] bg-[size:60%] bg-[url('assets/img/ehotel.png')] transition-all duration-300 hover:bg-[size:61%] cursor-pointer">
       <div class="flex flex-col justify-start items-start gap-4" style="width: 50%">
         <div class="text-New-Black text-2xl font-normal font-['Alata']">eHotel</div>
         <div class="w-full text-New-Black text-base font-normal font-['Inter']">This intuitive application simplifies hotel management through a process driven by staff workshops, UX personas, and iterative prototyping. Following successful user testing and stakeholder approval, the final interactive designs and comprehensive documentation were transitioned into production via agile development management.</div>
@@ -146,7 +167,7 @@
       </div>
     </div>
 
-    <div class="p-8 bg-gray-100 bg-no-repeat bg-right bg-[size:50%] bg-[url('assets/img/navlog.png')]">
+    <div class="p-8 bg-gray-100 bg-no-repeat bg-[position:260%_center] bg-[size:80%] bg-[url('assets/img/navlog.png')] transition-all duration-300 hover:bg-[size:80.5%] cursor-pointer">
       <div class="flex flex-col justify-start items-start gap-4" style="width: 50%">
         <img src="assets/img/smart4aviation.png" style="height: 32px">
         <div class="text-New-Black text-2xl font-normal font-['Alata']">NavLog</div>
@@ -163,26 +184,26 @@
       </div>
     </div>
 
-    <div class="p-8 bg-gray-100 bg-no-repeat bg-right bg-[size:50%] bg-[url('assets/img/warden.png')]" style="background-color: #020710">
-      <div class="flex flex-col justify-start items-start gap-4" style="width: 50%">
+    <div class="p-8 bg-gray-100 bg-no-repeat bg-[position:1050%_center] bg-[size:95%] bg-[url('assets/img/warden.png')] transition-all duration-300 hover:bg-[size:95.2%] cursor-pointer" style="background-color: #020710">
+      <div class="flex flex-col justify-start items-start gap-4" style="width: 50%;">
         <img src="assets/img/warden-logo.png" style="height: 32px">
-        <div class="text-New-White text-2xl font-normal font-['Alata']">WardenAI</div>
-        <div class="w-full text-New-White text-base font-normal font-['Inter']">The application is designed for game administrators as an AI-driven assistant that takes over their responsibilities when no staff are online. Warden actively monitors game server logs, analyzing them using custom-built tools.</div>
+        <div class="text-New-White text-2xl font-normal font-['Alata']" style="color: var(--warden-color);">WardenAI</div>
+        <div class="w-full text-New-White text-base font-normal font-['Inter']" style="color: var(--warden-color);">The application is designed for game administrators as an AI-driven assistant that takes over their responsibilities when no staff are online. Warden actively monitors game server logs, analyzing them using custom-built tools.</div>
         <div class="inline-flex justify-start items-center gap-1 flex-wrap content-center">
-          <div class="mz-project-tag">Product Owner</div>
-          <div class="mz-project-tag">AI Backend</div>
-          <div class="mz-project-tag">UI Design</div>
-          <div class="mz-project-tag">UX Design</div>
-          <div class="mz-project-tag">Front-End</div>
-          <div class="mz-project-tag">Python</div>
-          <div class="mz-project-tag">Branding</div>
-          <div class="mz-project-tag">Design System</div>
+          <div class="mz-project-tag mz-project-tag--warden">Product Owner</div>
+          <div class="mz-project-tag mz-project-tag--warden">AI Backend</div>
+          <div class="mz-project-tag mz-project-tag--warden">UI Design</div>
+          <div class="mz-project-tag mz-project-tag--warden">UX Design</div>
+          <div class="mz-project-tag mz-project-tag--warden">Front-End</div>
+          <div class="mz-project-tag mz-project-tag--warden">Python</div>
+          <div class="mz-project-tag mz-project-tag--warden">Branding</div>
+          <div class="mz-project-tag mz-project-tag--warden">Design System</div>
         </div>
-        <div class="text-New-Black text-base font-normal font-['Inter'] underline">READ MORE</div>
+        <div class="text-New-Black text-base font-normal font-['Inter'] underline" style="color: var(--warden-color);">READ MORE</div>
       </div>
     </div>
 
-    <div class="p-8 bg-gray-100 bg-no-repeat bg-right bg-[size:50%] bg-[url('assets/img/custodyhub.png')]">
+    <div class="p-8 bg-gray-100 bg-no-repeat bg-[position:450%_center] bg-[size:90%] bg-[url('assets/img/custodyhub.png')] transition-all duration-300 hover:bg-[size:90.5%] cursor-pointer">
       <div class="flex flex-col justify-start items-start gap-4" style="width: 50%">
         <img src="assets/img/bbh.png" style="height: 32px">
         <div class="text-New-Black text-2xl font-normal font-['Alata']">CustodyHUB</div>
@@ -200,7 +221,7 @@
       </div>
     </div>
 
-    <div class="p-8 bg-gray-100 bg-no-repeat bg-right bg-[size:50%] bg-[url('assets/img/shoply.png')]">
+    <div class="p-8 bg-gray-100 bg-no-repeat bg-right bg-[size:50%] bg-[url('assets/img/shoply.png')] transition-all duration-300 hover:bg-[size:51%] cursor-pointer">
       <div class="flex flex-col justify-start items-start gap-4" style="width: 50%">
         <div class="text-New-Black text-2xl font-normal font-['Alata']">Shoply</div>
         <div class="w-full text-New-Black text-base font-normal font-['Inter']">A playful, mobile-optimized application designed to help users seamlessly create, edit, and share shopping lists with family and friends. I was responsible for the entire design lifecycle, I delivered the complete branding and logo variations, conducted the foundational UX research, and executed the end-to-end UI/UX application design.</div>
