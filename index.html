@@ -12,8 +12,10 @@
           colors: {
             'New-Black': '#1C1C1E',
             'New-White': '#F5F5F7',
-            'New-Teal': '#14B8A6',
-            'New-Teal-Intensive': '#00FFD9'
+            'New-Teal': {
+              DEFAULT: '#14B8A6',
+              'Intensive': '#00FFD9'
+            }
           }
         }
       }
@@ -33,6 +35,16 @@
       color: #F5F5F7;
       font-family: 'Alata', sans-serif;
     }
+    .skill-tag {
+      padding: 0.5rem 1rem;
+      background-color: #1C1C1E;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      color: #F5F5F7;
+      font-family: 'Alata', sans-serif;
+    }
   </style>
 </head>
 <body>
@@ -41,8 +53,8 @@
   <div class="w-full self-stretch flex flex-col justify-start items-start">
     <div class="w-full h-[780px] relative overflow-hidden bg-cover bg-center bg-[url('assets/img/hero.png')]">
       <div class="absolute bottom-16 right-16 inline-flex flex-col justify-start items-start">
-        <div class="New-Teal-Intensive text-8xl font-normal font-['Alata']">Hello, I’m Michał</div>
-        <div class="New-Teal-Intensive text-6xl font-normal font-['Alata']">UX/UI Designer</div>
+        <div class="text-New-Teal-Intensive text-8xl font-normal font-['Alata']">Hello, I’m Michał</div>
+          <div class="text-New-Teal-Intensive text-6xl font-normal font-['Alata']">UX/UI Designer</div>
       </div>
     </div>
   </div>
@@ -80,7 +92,7 @@
       </div>
     </div>
 
-    <div class="p-8 bg-gray-100 bg-no-repeat bg-right bg-[size:50%] bg-[url('assets/img/realvalue.png')]">
+    <div class="p-8 bg-gray-100 bg-no-repeat bg-[position:430%_center] bg-[size:90%] bg-[url('assets/img/realvalue.png')]">
       <div class="flex flex-col justify-start items-start gap-4" style="width: 50%">
         <div class="text-New-Black text-2xl font-normal font-['Alata']">RealValue</div>
         <div class="w-full text-New-Black text-base font-normal font-['Inter']">RealValue is a web portal for people who are looking for real estate to buy, rent or invest.</div>
@@ -96,7 +108,7 @@
       </div>
     </div>
 
-    <div class="p-8 bg-gray-100 bg-no-repeat bg-right bg-[size:50%] bg-[url('assets/img/squad.png')]" style="background-color: #141820">
+    <div class="p-8 bg-gray-100 bg-no-repeat bg-[position:500%_center] bg-[size:90%] bg-[url('assets/img/squad.png')]" style="background-color: #141820">
       <div class="flex flex-col justify-start items-start gap-4" style="width: 50%">
         <img src="assets/img/squad-logo.png" style="height: 32px">
         <div class="text-New-White text-2xl font-normal font-['Alata']">Squad UI remake</div>
@@ -114,7 +126,8 @@
       </div>
     </div>
 
-    <div class="p-8 bg-gray-100 bg-no-repeat bg-right bg-[size:50%] bg-[url('assets/img/ehotel.png')]">
+
+    <div class="p-8 bg-gray-100 bg-no-repeat bg-[position:130%_center] bg-[size:60%] bg-[url('assets/img/ehotel.png')]">
       <div class="flex flex-col justify-start items-start gap-4" style="width: 50%">
         <div class="text-New-Black text-2xl font-normal font-['Alata']">eHotel</div>
         <div class="w-full text-New-Black text-base font-normal font-['Inter']">This intuitive application simplifies hotel management through a process driven by staff workshops, UX personas, and iterative prototyping. Following successful user testing and stakeholder approval, the final interactive designs and comprehensive documentation were transitioned into production via agile development management.</div>
@@ -218,36 +231,16 @@
       <div class="self-stretch p-14 bg-gray-200 flex flex-col justify-start items-start gap-2.5">
         <div class="justify-start text-New-Black text-3xl font-normal font-['Alata']">Design & Strategy</div>
         <div class="self-stretch inline-flex justify-start items-start gap-2 flex-wrap content-start">
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">UI Architecture</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Design systems</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Branding</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">AI Product Design</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">UX Research & Strategy</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Product Discovery</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Workshop Facilitation</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Information Architecture</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Wireframing & Prototyping</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">UX Team Leading</div>
-          </div>
+          <div class="skill-tag">UI Architecture</div>
+          <div class="skill-tag">Design systems</div>
+          <div class="skill-tag">Branding</div>
+          <div class="skill-tag">AI Product Design</div>
+          <div class="skill-tag">UX Research & Strategy</div>
+          <div class="skill-tag">Product Discovery</div>
+          <div class="skill-tag">Workshop Facilitation</div>
+          <div class="skill-tag">Information Architecture</div>
+          <div class="skill-tag">Wireframing & Prototyping</div>
+          <div class="skill-tag">UX Team Leading</div>
         </div>
       </div>
     </div>
@@ -255,45 +248,19 @@
       <div class="self-stretch p-14 bg-gray-200 flex flex-col justify-start items-start gap-2.5">
         <div class="justify-start text-New-Black text-3xl font-normal font-['Alata']">Technical & Development</div>
         <div class="self-stretch inline-flex justify-start items-start gap-2 flex-wrap content-start">
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Technical & Development</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Front-End Support (HTML/CSS)</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Technical QA</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">API Integration concepts</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">OpenAI</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">V0</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Figma Make</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Creating AI based apps (Python)</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Creating AI based apps (Python)</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Gemini API</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Ollama API</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Training Loras</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Comfy UI</div>
-          </div>
+          <div class="skill-tag">Technical & Development</div>
+          <div class="skill-tag">Front-End Support (HTML/CSS)</div>
+          <div class="skill-tag">Technical QA</div>
+          <div class="skill-tag">API Integration concepts</div>
+          <div class="skill-tag">OpenAI</div>
+          <div class="skill-tag">V0</div>
+          <div class="skill-tag">Figma Make</div>
+          <div class="skill-tag">Creating AI based apps (Python)</div>
+          <div class="skill-tag">Creating AI based apps (Python)</div>
+          <div class="skill-tag">Gemini API</div>
+          <div class="skill-tag">Ollama API</div>
+          <div class="skill-tag">Training Loras</div>
+          <div class="skill-tag">Comfy UI</div>
         </div>
       </div>
     </div>
@@ -301,48 +268,20 @@
       <div class="self-stretch p-14 bg-gray-200 flex flex-col justify-start items-start gap-2.5">
         <div class="justify-start text-New-Black text-3xl font-normal font-['Alata']">Tools & Ecosystem</div>
         <div class="self-stretch inline-flex justify-start items-start gap-1 flex-wrap content-start">
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Figma</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Jira</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">MIRO</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Sketch</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Adobe Creative Suite</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">GIT</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">SVN</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Bootstrap</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Tailwind</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Pycharm</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Unity</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Storybook</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">IntelliJ</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Confluence</div>
-          </div>
+          <div class="skill-tag">Figma</div>
+          <div class="skill-tag">Jira</div>
+          <div class="skill-tag">MIRO</div>
+          <div class="skill-tag">Sketch</div>
+          <div class="skill-tag">Adobe Creative Suite</div>
+          <div class="skill-tag">GIT</div>
+          <div class="skill-tag">SVN</div>
+          <div class="skill-tag">Bootstrap</div>
+          <div class="skill-tag">Tailwind</div>
+          <div class="skill-tag">Pycharm</div>
+          <div class="skill-tag">Unity</div>
+          <div class="skill-tag">Storybook</div>
+          <div class="skill-tag">IntelliJ</div>
+          <div class="skill-tag">Confluence</div>
         </div>
       </div>
     </div>
@@ -350,41 +289,21 @@
       <div class="flex-1 p-14 bg-gray-200 inline-flex flex-col justify-start items-start gap-2.5">
         <div class="justify-start text-New-Black text-3xl font-normal font-['Alata']">Leadership & Soft Skills</div>
         <div class="self-stretch inline-flex justify-start items-start gap-2 flex-wrap content-start">
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Team Leading</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Mentoring & Team Growth</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Stakeholder Management</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Community Leadership</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Cross-functional Collaboration</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Agile/Scrum Methodologies</div>
-          </div>
+          <div class="skill-tag">Team Leading</div>
+          <div class="skill-tag">Mentoring & Team Growth</div>
+          <div class="skill-tag">Stakeholder Management</div>
+          <div class="skill-tag">Community Leadership</div>
+          <div class="skill-tag">Cross-functional Collaboration</div>
+          <div class="skill-tag">Agile/Scrum Methodologies</div>
         </div>
       </div>
       <div class="flex-1 self-stretch p-14 bg-gray-200 inline-flex flex-col justify-start items-start gap-2.5">
         <div class="justify-start text-New-Black text-3xl font-normal font-['Alata']">Languages</div>
         <div class="self-stretch inline-flex justify-start items-start gap-2 flex-wrap content-start">
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Polish (Native)</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">English</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">German</div>
-          </div>
-          <div class="px-4 py-2 bg-New-Black flex justify-center items-center">
-            <div class="justify-start text-New-White text-base font-normal font-['Alata']">Russian</div>
-          </div>
+          <div class="skill-tag">Polish (Native)</div>
+          <div class="skill-tag">English</div>
+          <div class="skill-tag">German</div>
+          <div class="skill-tag">Russian</div>
         </div>
       </div>
     </div>
