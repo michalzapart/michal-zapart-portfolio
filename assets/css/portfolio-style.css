@@ -1,0 +1,41 @@
+:root {
+  --squad-color: #ffc40a;
+  --warden-color: #f70d10;
+}
+
+.mz-project-tag {
+  padding: 0.25rem 0.5rem;
+  background-color: #1C1C1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #F5F5F7;
+  font-family: 'Alata', sans-serif;
+  opacity: 0.9;
+}
+.mz-project-tag:hover {
+  opacity: 1;
+}
+.mz-project-tag--warden {
+  background-color: var(--warden-color);
+  color: #181f29;
+}
+.mz-project-tag--squad {
+  background-color: var(--squad-color);
+  color: #181f29;
+}
+.skill-tag {
+  opacity: 0.9;
+  padding: 0.5rem 1rem;
+  background-color: #1C1C1E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #F5F5F7;
+  font-family: 'Alata', sans-serif;
+}
+.skill-tag:hover {
+  opacity: 1;
+}
