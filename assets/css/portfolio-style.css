@@ -35,7 +35,13 @@
   font-size: 1rem;
   color: #F5F5F7;
   font-family: 'Alata', sans-serif;
+  border: 1px solid #1C1C1E;;
 }
 .skill-tag:hover {
   opacity: 1;
+}
+.skill-tag-secondary {
+   background-color: transparent;
+  color: #1C1C1E;
+  border: 1px solid;
 }
